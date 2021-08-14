@@ -1,0 +1,37 @@
+{
+    "size":
+    {   
+        "small": 1,
+        "medium": 1.5,
+        "large": 2
+    },
+    "dough":
+    {
+        "pan": 5,
+        "pan - stuffed crust": 10,
+        "thin": 10,
+        "thin - stuffed crust": 15,
+        "regular": 15,
+        "regular - stuffed crust": 20
+    },
+    "topping":
+    {
+        "pepperoni": 5,
+        "mushroom": 10,
+        "meat": 20,
+        "veal": 25,
+        "chicken": 15,
+        "seafood": 30,
+        "shrimp": 25,
+        "chilli pepper": 5,
+        "tomato": 5,
+        "olives": 5,
+        "onion": 5,
+        "mozarella cheese": 3
+    },
+    "base":
+    {
+        "tomato sauce": 5,
+        "white sauce": 10
+    }
+}

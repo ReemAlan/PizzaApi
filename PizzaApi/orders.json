@@ -1,0 +1,64 @@
+[
+  {
+    "pizzas": [
+      {
+        "size": "small",
+        "dough": "pan",
+        "topping": [
+          "pepperoni",
+          "mozarella cheese"
+        ],
+        "base": "tomato sauce",
+        "price": 18
+      }
+    ],
+    "id": "59b4ce54-dcd7-49a6-8cfa-fe2a1d938535",
+    "customerName": "Reem"
+  },
+  {
+    "pizzas": [
+      {
+        "size": "small",
+        "dough": "regular - stuffed crust",
+        "topping": [
+          "mushroom",
+          "chicken",
+          "olives",
+          "onion",
+          "mozarella cheese"
+        ],
+        "base": "tomato sauce",
+        "price": 63
+      },
+      {
+        "size": "large",
+        "dough": "regular - stuffed crust",
+        "topping": [
+          "mozarella cheese"
+        ],
+        "base": "tomato sauce",
+        "price": 48
+      }
+    ],
+    "id": "9a8dcaba-cf7e-45f6-9e27-5d9cde44db4f",
+    "customerName": "Aya"
+  },
+  {
+    "pizzas": [
+      {
+        "size": "small",
+        "dough": "thin",
+        "topping": [
+          "mushroom",
+          "olives",
+          "onion",
+          "mozarella cheese"
+        ],
+        "base": "white sauce",
+        "price": 43
+      }
+    ],
+    "id": "00b25078-4c80-444b-b8df-9cb476614ebb",
+    "customerName": "Reem"
+  }
+]
