@@ -11,9 +11,9 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
-app.MapGet("/api/menu", () =>
+app.MapGet("/api/menu", async () =>
 {
-    return ReadMenu("pizzaconfigurations.json");
+    return await ReadMenu("pizzaconfigurations.json");
 
     static async Task<JsonObject> ReadMenu(string fileName)
     {
@@ -25,9 +25,9 @@ app.MapGet("/api/menu", () =>
     }
 });
 
-app.MapPost("/api/order", ([FromBody] Order order) =>
+app.MapPost("/api/order", async ([FromBody] Order order) =>
 {
-    var orders = GetOrders();
+    var orders = await GetOrders();
     if (orders.Length == 0) 
     {
         orders = new Order[] {order};
@@ -51,11 +51,11 @@ app.MapPost("/api/order", ([FromBody] Order order) =>
         );
     }
 
-    static Order[] GetOrders()
+    static async Task<Order[]> GetOrders()
     {
         using (var jsonFileReader = File.OpenText("orders.json"))
         {
-            string content = jsonFileReader.ReadToEnd();
+            string content = await jsonFileReader.ReadToEndAsync();
 
             return JsonSerializer.Deserialize<Order[]>(content,
                 new JsonSerializerOptions
