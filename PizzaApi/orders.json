@@ -79,5 +79,56 @@
     ],
     "id": "a267ebde-bbde-44b2-afed-8a416f36ae6b",
     "customerName": "Farah"
+  },
+  {
+    "pizzas": [
+      {
+        "size": "medium",
+        "dough": "pan",
+        "topping": [
+          "seafood",
+          "chilli pepper",
+          "olives",
+          "onion",
+          "mozarella cheese"
+        ],
+        "base": "tomato sauce",
+        "price": 60.5
+      },
+      {
+        "size": "small",
+        "dough": "thin",
+        "topping": [
+          "mushroom",
+          "chicken",
+          "chilli pepper",
+          "olives",
+          "onion",
+          "mozarella cheese"
+        ],
+        "base": "white sauce",
+        "price": 63
+      }
+    ],
+    "id": "66132b25-e263-413e-9aa2-855fde4d38ed",
+    "customerName": "Reem"
+  },
+  {
+    "pizzas": [
+      {
+        "size": "medium",
+        "dough": "regular - stuffed crust",
+        "topping": [
+          "shrimp",
+          "olives",
+          "onion",
+          "mozarella cheese"
+        ],
+        "base": "white sauce",
+        "price": 78
+      }
+    ],
+    "id": "2fa4ee97-681a-423a-a129-729ab801a602",
+    "customerName": "R"
   }
 ]

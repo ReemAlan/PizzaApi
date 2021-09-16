@@ -4,12 +4,15 @@ using System.Net.Http;
 using System.Text.Json.Nodes;
 using System.Text.Json;
 using System.Text;
+using System.Collections.Generic;
+using System;
+using System.Threading.Tasks;
 
 namespace PizzaApp
 {
     public class Program
     {
-        static readonly string _baseUrl = "http://localhost:5000/api";
+        static readonly string _baseUrl = "http://localhost:5059/api";
 
         public static IDictionary<string, double> Sizes { get; set; } = new Dictionary<string, double>();
         public static IDictionary<string, double> Dough { get; set; } = new Dictionary<string, double>();

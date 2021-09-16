@@ -1,6 +1,9 @@
 using Spectre.Console;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Collections.Generic;
+using System.Linq;
+using System;
 
 namespace PizzaApp
 {
@@ -27,19 +30,19 @@ namespace PizzaApp
                 new SelectionPrompt<string>()
                     .Title("What pizza size would you like?")
                     .MoreChoicesText("[grey](Move up and down to reveal more choices)[/]")
-                    .AddChoices(Program.Sizes.Keys.ToArray()));
+                    .AddChoices(Program.Sizes.Keys));
 
             var dough = AnsiConsole.Prompt(
                 new SelectionPrompt<string>()
                     .Title("What pizza dough would you like?")
                     .MoreChoicesText("[grey](Move up and down to reveal more choices)[/]")
-                    .AddChoices(Program.Dough.Keys.ToArray()));
+                    .AddChoices(Program.Dough.Keys));
 
             var sauce = AnsiConsole.Prompt(
                 new SelectionPrompt<string>()
                     .Title("Pick your favourite sauce!")
                     .MoreChoicesText("[grey](Move up and down to reveal more choices)[/]")
-                    .AddChoices(Program.Sauces.Keys.ToArray()));
+                    .AddChoices(Program.Sauces.Keys));
 
             var toppings = AnsiConsole.Prompt(
                 new MultiSelectionPrompt<string>()
@@ -48,7 +51,7 @@ namespace PizzaApp
                     .InstructionsText(
                         "[grey](Press [blue]<space>[/] to toggle a topping, " + 
                         "[green]<enter>[/] to accept)[/]")
-                    .AddChoices(Program.Toppings.Keys.ToArray()));
+                    .AddChoices(Program.Toppings.Keys));
 
            if (AnsiConsole.Confirm("Confirm pizza order")) 
            {
