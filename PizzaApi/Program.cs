@@ -23,7 +23,7 @@ app.MapGet("/api/menu", async () =>
         using (var jsonFileReader = File.OpenText("pizzaconfigurations.json"))
         {
             var file = await jsonFileReader.ReadToEndAsync();
-            return JsonNode.Parse(file).AsObject();
+            return JsonNode.Parse(file)!.AsObject();
         }
     }
 });
@@ -64,7 +64,7 @@ app.MapPost("/api/order", async ([FromBody] Order order) =>
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
-                });
+                })!;
         }
     } 
 });
